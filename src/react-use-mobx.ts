@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { observable, autorun } from 'mobx';
 
-const useObservable = <T>(initialState: T) => {
+export const useObservable = <T>(initialState: T) => {
   const [state, setState] = useState(initialState);
   const value = useRef(observable(state));
 
@@ -13,5 +13,4 @@ const useObservable = <T>(initialState: T) => {
   return value.current as T;
 };
 
-export default useObservable;
 export { observer } from 'mobx-react';
