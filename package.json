@@ -1,0 +1,36 @@
+{
+  "name": "react-use-mobx",
+  "version": "0.0.1",
+  "author": "ShanaMaid <usteczeng@gmail.com>",
+  "bugs": {
+    "email": "uestczeng@gmail.com",
+    "url": "https://github.com/ShanaMaid/react-use-mobx/issues"
+  },
+  "description": "React Hook to use mobx and mobx-react",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "package.json",
+    "react-use-mobx.d.ts",
+    "react-use-mobx.js"
+  ],
+  "homepage": "https://github.com/ShanaMaid/react-use-mobx#readme",
+  "license": "MIT",
+  "main": "react-use-mobx.js",
+  "repository": "github:ShanaMaid/react-use-mobx",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "types": "./react-use-mobx.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "mobx": "^5.13.0",
+    "mobx-react": "^6.1.3",
+    "react": "^16.8.6",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}

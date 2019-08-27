@@ -1,0 +1,6 @@
+/.git
+/.vscode
+/node_modules
+/react-use-mobx.d.ts
+/react-use-mobx.js
+/react-use-mobx.js.map
