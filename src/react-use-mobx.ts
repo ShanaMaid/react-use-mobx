@@ -1,7 +1,11 @@
 import { useEffect, useState, useRef } from 'react';
 import { observable, autorun } from 'mobx';
 
-export const useObservable = <T>(initialState: T) => {
+/**
+ * observable state, when state change, auto setState
+ * @param initialState it must be object!
+ */
+export const useObservable = <T extends Object>(initialState: T) => {
   const [state, setState] = useState(initialState);
   const value = useRef(observable(state));
 
