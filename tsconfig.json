@@ -4,7 +4,11 @@
     "declaration": true,
     "downlevelIteration": true,
     "jsx": "react",
-    "lib": [ "dom", "es5", "es2015.promise", "es2015.collection", "es2015.iterable", "scripthost" ],
+    "lib": [
+      "dom",
+      "es5",
+      "es2015"
+    ],
     "module": "commonjs",
     "moduleResolution": "Node",
     "noFallthroughCasesInSwitch": true,
