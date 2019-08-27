@@ -13,12 +13,14 @@
 [Online Demo](https://stackblitz.com/edit/react-tupq9h)
 ```javascript
 import React, { useState } from 'react';
-import { observer } from 'mobx-react';
+import { useObservable, observer } from 'react-use-mobx';
 import { render } from 'react-dom';
-import { useObservable } from './lib';
 
 const App = observer(() => {
   const [ count1, setCount ] = useState({a: 1});
+  /**
+   * initialState must be Object!!!!!!
+   */
   const count2 = useObservable({a: 1});
   return (
     <div>
